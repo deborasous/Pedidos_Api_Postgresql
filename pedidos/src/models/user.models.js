@@ -2,7 +2,7 @@ const { connection } = require('../database/connection');
 const { STRING, DATE } = require('sequelize');
 
 const User = connection.define(
-  'user',
+  'users',
   {
     name: STRING,
     surname: STRING,
