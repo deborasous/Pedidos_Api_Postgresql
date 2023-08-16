@@ -16,6 +16,8 @@ const Order = connection.define(
     dateHour: DATE,
     orderStatus: STRING,
     totalOrder: FLOAT,
+    createdAt: DATE,
+    updatedAt: DATE,
   },
   { underscored: true, paranoid: true }
 );
