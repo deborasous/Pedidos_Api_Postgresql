@@ -13,7 +13,7 @@ const Invoice = connection.define(
         key: 'id',
       },
     },
-    user_id: {
+    userId: {
       type: Sequelize.INTEGER,
       references: {
         model: {
@@ -39,3 +39,7 @@ const Invoice = connection.define(
   },
   { underscored: true, paranoid: true }
 );
+
+module.exports = {
+  Invoice,
+};
