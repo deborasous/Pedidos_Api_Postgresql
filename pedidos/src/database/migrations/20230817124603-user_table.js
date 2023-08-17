@@ -15,6 +15,7 @@ module.exports = {
       date_birth: { type: Sequelize.STRING, allowNull: false },
       cpf: { type: Sequelize.STRING, allowNull: false, unique: true },
       cell_phone: { type: Sequelize.STRING, allowNull: false },
+      address: { type: Sequelize.STRING, allowNull: false },
       email: { type: Sequelize.STRING, allowNull: false, unique: true },
       password: { type: Sequelize.STRING, allowNull: false },
       created_at: { type: Sequelize.DATE, allowNull: false },

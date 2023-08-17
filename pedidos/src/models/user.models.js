@@ -23,6 +23,7 @@ const User = connection.define(
       unique: true,
     },
     cellPhone: STRING,
+    address: STRING,
     email: {
       type: STRING,
       validate: {
